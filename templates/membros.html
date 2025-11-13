@@ -1,114 +1,81 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nossa Equipe | GT-09 Interoperabilidade no SUS Digital</title>
-    
-    <link rel="icon" href="https://img.icons8.com/ios-filled/50/000000/medical-doctor.png" type="image/png">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-</head>
-<body>
+{% extends "base.html" %}
 
+{% block title %}
+Nossa Equipe | GT-09 Interoperabilidade no SUS Digital
+{% endblock %}
+
+{% block header %}
     <header class="hero-interno">
-        </header>
+    </header>
+{% endblock %}
 
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="{{ url_for('index') }}" class="ativo">Página Inicial</a></li>
-                <li><a href="{{ url_for('sobre') }}">Sobre o GT-09</a></li>
-                <li><a href="{{ url_for('membros') }}" class="ativo">Membros</a></li>
-                <li><a href="{{ url_for('atuacao') }}">Linhas de Atuação</a></li>
-                <li><a href="{{ url_for('publicacoes') }}">Publicações</a></li>
-                <li><a href="{{ url_for('noticias') }}">Notícias</a></li>
-                <li><a href="{{ url_for('contato') }}">Contato</a></li>
-            </ul>
+{% block content %}
+<section class="pagina-conteudo">
+    <h2 style="text-align: center; margin-bottom: 3rem;">Nossa Equipe</h2>
+
+    <h3>Coordenação</h3>
+    <div class="grid-membros">
+
+        <div class="card-membro">
+            <img src="https://picsum.photos/id/1005/300/300" alt="Foto do Coordenador">
+            <h3>Prof. Dr. Nome do Coordenador</h3>
+            <p class="funcao">Coordenador Geral</p>
+            <a href="http://lattes.cnpq.br/SEU_ID_LATTES" target="_blank" class="link-lattes">
+                Currículo Lattes 🔗
+            </a>
         </div>
-    </nav>
 
-    <main class="container">
-        
-        <section class="pagina-conteudo">
-            <h2 style="text-align: center; margin-bottom: 3rem;">Nossa Equipe</h2>
-
-            <h3>Coordenação</h3>
-            <div class="grid-membros">
-                
-                <div class="card-membro">
-                    <img src="https://picsum.photos/id/1005/300/300" alt="Foto do Coordenador">
-                    <h3>Prof. Dr. Nome do Coordenador</h3>
-                    <p class="funcao">Coordenador Geral</p>
-                    <a href="http://lattes.cnpq.br/SEU_ID_LATTES" target="_blank" class="link-lattes">
-                        Currículo Lattes 🔗
-                    </a>
-                </div>
-
-                <div class="card-membro">
-                    <img src="https://picsum.photos/id/1027/300/300" alt="Foto do Vice-Coordenador">
-                    <h3>Profa. Dra. Nome da Vice</h3>
-                    <p class="funcao">Vice-Coordenadora</p>
-                    <a href="http://lattes.cnpq.br/SEU_ID_LATTES" target="_blank" class="link-lattes">
-                        Currículo Lattes 🔗
-                    </a>
-                </div>
-
-            </div> <hr style="margin: 3rem 0;">
-
-            <h3>Pesquisadores e Alunos</h3>
-            <div class="grid-membros">
-                
-                <div class="card-membro">
-                    <img src="https://picsum.photos/id/237/300/300" alt="Foto do Aluno 1">
-                    <h3>Nome do Aluno de Extensão</h3>
-                    <p class="funcao">Aluno de Extensão | Medicina</p>
-                    <a href="http://lattes.cnpq.br/SEU_ID_LATTES" target="_blank" class="link-lattes">
-                        Currículo Lattes 🔗
-                    </a>
-                </div>
-
-                <div class="card-membro">
-                    <img src="https://picsum.photos/id/238/300/300" alt="Foto do Aluno 2">
-                    <h3>Nome da Aluna de Pós-Graduação</h3>
-                    <p class="funcao">Mestranda | Saúde Coletiva</p>
-                    <a href="http://lattes.cnpq.br/SEU_ID_LATTES" target="_blank" class="link-lattes">
-                        Currículo Lattes 🔗
-                    </a>
-                </div>
-
-                <div class="card-membro">
-                    <img src="https://picsum.photos/id/239/300/300" alt="Foto do Aluno 3">
-                    <h3>Nome do Aluno de TI</h3>
-                    <p class="funcao">Aluno de Extensão | Ciência da Computação</p>
-                    <a href="http://lattes.cnpq.br/SEU_ID_LATTES" target="_blank" class="link-lattes">
-                        Currículo Lattes 🔗
-                    </a>
-                </div>
-
-                <div class="card-membro">
-                    <img src="https://picsum.photos/id/240/300/300" alt="Foto do Aluno 4">
-                    <h3>Nome do Colaborador</h3>
-                    <p class="funcao">Pesquisador Voluntário</p>
-                    <a href="http://lattes.cnpq.br/SEU_ID_LATTES" target="_blank" class="link-lattes">
-                        Currículo Lattes 🔗
-                    </a>
-                </div>
-
-                 </div> </section>
-
-    </main>
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 GT-09 Interoperabilidade e Parcerias. Todos os direitos reservados.</p>
-            <p>Vinculado ao [Nome da sua Universidade/Instituição]</p>
-            <p class="desenvolvido-por">Desenvolvido com <span style="color: #e25555;">&hearts;</span> pelo GT-09.</p>
+        <div class="card-membro">
+            <img src="https://picsum.photos/id/1027/300/300" alt="Foto do Vice-Coordenador">
+            <h3>Profa. Dra. Nome da Vice</h3>
+            <p class="funcao">Vice-Coordenadora</p>
+            <a href="http://lattes.cnpq.br/SEU_ID_LATTES" target="_blank" class="link-lattes">
+                Currículo Lattes 🔗
+            </a>
         </div>
-    </footer>
 
-</body>
-</html>
+    </div>
+    <hr style="margin: 3rem 0;">
+
+    <h3>Pesquisadores e Alunos</h3>
+    <div class="grid-membros">
+
+        <div class="card-membro">
+            <img src="https://picsum.photos/id/237/300/300" alt="Foto do Aluno 1">
+            <h3>Nome do Aluno de Extensão</h3>
+            <p class="funcao">Aluno de Extensão | Medicina</p>
+            <a href="http://lattes.cnpq.br/SEU_ID_LATTES" target="_blank" class="link-lattes">
+                Currículo Lattes 🔗
+            </a>
+        </div>
+
+        <div class="card-membro">
+            <img src="https://picsum.photos/id/238/300/300" alt="Foto do Aluno 2">
+            <h3>Nome da Aluna de Pós-Graduação</h3>
+            <p class="funcao">Mestranda | Saúde Coletiva</p>
+            <a href="http://lattes.cnpq.br/SEU_ID_LATTES" target="_blank" class="link-lattes">
+                Currículo Lattes 🔗
+            </a>
+        </div>
+
+        <div class="card-membro">
+            <img src="https://picsum.photos/id/239/300/300" alt="Foto do Aluno 3">
+            <h3>Nome do Aluno de TI</h3>
+            <p class="funcao">Aluno de Extensão | Ciência da Computação</p>
+            <a href="http://lattes.cnpq.br/SEU_ID_LATTES" target="_blank" class="link-lattes">
+                Currículo Lattes 🔗
+            </a>
+        </div>
+
+        <div class="card-membro">
+            <img src="https://picsum.photos/id/240/300/300" alt="Foto do Aluno 4">
+            <h3>Nome do Colaborador</h3>
+            <p class="funcao">Pesquisador Voluntário</p>
+            <a href="http://lattes.cnpq.br/SEU_ID_LATTES" target="_blank" class="link-lattes">
+                Currículo Lattes 🔗
+            </a>
+        </div>
+
+    </div>
+</section>
+{% endblock %}
