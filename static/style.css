@@ -450,3 +450,114 @@ hr {
     color: var(--cor-texto-claro);
     border-color: var(--cor-principal);
 }
+
+/* --- Estilos da Página de Contato --- */
+
+.info-contato h4 {
+    font-size: 1.4rem;
+    color: var(--cor-principal);
+    margin-bottom: 0.5rem;
+}
+
+.info-contato p {
+    margin-bottom: 0.5rem;
+}
+
+/* Estilo para o link de e-mail clicável */
+.link-contato {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+    word-break: break-all; /* Garante que o e-mail quebre em telas pequenas */
+}
+
+.link-contato:hover {
+    text-decoration: underline;
+}
+
+/* --- Estilos da Página de Contato --- */
+
+.info-contato h4 {
+    font-size: 1.4rem;
+    color: var(--cor-principal);
+    margin-bottom: 0.5rem;
+}
+
+.info-contato p {
+    margin-bottom: 0.5rem;
+}
+
+/* Estilo para o link de e-mail clicável */
+.link-contato {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+    word-break: break-all; /* Garante que o e-mail quebre em telas pequenas */
+}
+
+.link-contato:hover {
+    text-decoration: underline;
+}
+
+/* Redefinição para os botões de redes sociais (estilo círculo) */
+.grid-redes-sociais {
+    display: flex; /* Usamos flexbox para organizar em linha */
+    justify-content: flex-start; /* Centraliza os botões */
+    flex-wrap: wrap; /* Permite quebrar linha em telas pequenas */
+    gap: 1.5rem; /* Espaço entre os botões */
+    margin-top: 2rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px; /* Largura para o círculo */
+    height: 60px; /* Altura para o círculo */
+    border-radius: 50%; /* Faz o elemento ser um círculo */
+    font-size: 0; /* Esconde o texto "Twitter", "Instagram", etc. */
+    color: white; /* Cor dos ícones */
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.social-link i {
+    font-size: 1.8rem; /* Tamanho do ícone do Font Awesome */
+    color: white; /* Cor dos ícones */
+}
+
+/* Efeito ao passar o mouse */
+.social-link:hover {
+    transform: translateY(-5px); /* Move um pouco para cima */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
+}
+
+/* --- Cores dos Círculos --- */
+/* Use a cor que desejar para cada rede.
+   O #4A308B é um roxo escuro, similar ao da sua imagem. */
+
+.social-link.twitter {
+    background-color: #4A308B; /* Roxo escuro */
+}
+
+.social-link.instagram {
+    background-color: #4A308B; /* Roxo escuro */
+}
+
+.social-link.github {
+    background-color: #4A308B; /* Roxo escuro */
+}
+
+/* Se quiser cores específicas para cada rede, descomente e ajuste: */
+/*
+.social-link.twitter {
+    background-color: #1DA1F2; 
+}
+.social-link.instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+.social-link.github {
+    background-color: #333; 
+}
+*/

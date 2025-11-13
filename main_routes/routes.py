@@ -24,22 +24,6 @@ def sobre_route():
 def membros_route():
     return render_template('membros.html', active_page='membros_route')
 
-@main_bp.route('/atuacao')
-def atuacao_route():
-    # return render_template('atuacao.html', active_page='atuacao_route')
-    return "Página 'Linhas de Atuação' em construção!", 404
-
-@main_bp.route('/publicacoes')
-def publicacoes_route():
-    # return render_template('publicacoes.html', active_page='publicacoes_route')
-    return "Página 'Publicações' em construção!", 404
-
-@main_bp.route('/noticias')
-def noticias_route():
-    # return render_template('noticias.html', active_page='noticias_route')
-    return "Página 'Notícias' em construção!", 404
-
 @main_bp.route('/contato')
 def contato_route():
-    # return render_template('contato.html', active_page='contato_route')
-    return "Página 'Contato' em construção!", 404
+    return render_template('contato.html', active_page='contato_route')
