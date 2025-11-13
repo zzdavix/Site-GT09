@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre o GT-09 | Interoperabilidade no SUS Digital</title>
+    
+    <link rel="icon" href="https://img.icons8.com/ios-filled/50/000000/medical-doctor.png" type="image/png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <header class="hero-interno">
+        </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="{{ url_for('index') }}">Página Inicial</a></li>
+                <li><a href="{{ url_for('sobre') }}" class="ativo">Sobre o GT-09</a></li>
+                <li><a href="{{ url_for('membros') }}">Membros</a></li>
+                <li><a href="{{ url_for('atuacao') }}">Linhas de Atuação</a></li>
+                <li><a href="{{ url_for('publicacoes') }}">Publicações</a></li>
+                <li><a href="{{ url_for('noticias') }}">Notícias</a></li>
+                <li><a href="{{ url_for('contato') }}">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        
+        <section class="pagina-conteudo card">
+            <h2>Sobre o GT-09: Interoperabilidade e Parcerias Colaborativas</h2>
+            
+            <p>O Grupo de Trabalho (GT) 09 é uma iniciativa de extensão e pesquisa focada em um dos maiores desafios do Sistema Único de Saúde (SUS) na era digital: garantir que os sistemas de informação "conversem" entre si (interoperabilidade) e que parcerias eficazes sejam formadas para acelerar a inovação.</p>
+
+            <hr> <h3>Nossa Missão</h3>
+            <p>Promover a integração de dados e sistemas na saúde pública brasileira, desenvolvendo pesquisas e propondo diretrizes que facilitem a interoperabilidade e o desenvolvimento de parcerias estratégicas no âmbito do SUS Digital.</p>
+
+            <h3>Nossa Visão</h3>
+            <p>Ser referência nacional na produção de conhecimento e soluções inovadoras para a interoperabilidade e colaboração no SUS Digital, contribuindo para um sistema de saúde mais conectado, eficiente, equitativo e centrado no cidadão.</p>
+
+            <hr>
+
+            <h3>Objetivos Estratégicos</h3>
+            <p>Para alcançar nossa missão, nosso grupo se dedica a:</p>
+            <ul>
+                <li>Analisar e disseminar padrões de interoperabilidade (como RNDS, HL7 FHIR, openEHR) aplicados ao contexto do SUS.</li>
+                <li>Mapear os atores, desafios e oportunidades nas parcerias público-privadas e acadêmicas para o SUS Digital.</li>
+                <li>Propor modelos de governança de dados e colaboração que promovam a inovação e o desenvolvimento sustentável de soluções digitais.</li>
+                <li>Fomentar a capacitação de profissionais e a produção científica na área de saúde digital.</li>
+            </ul>
+
+            <h3>Contexto Institucional</h3>
+            <p>Vinculado ao [Nome do seu Programa, ex: PET-Saúde] da [Nome da sua Universidade], nosso grupo une estudantes de graduação, pós-graduação, professores e profissionais do serviço para pensar criticamente e construir soluções práticas para a saúde pública brasileira.</p>
+        </section>
+
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 GT-09 Interoperabilidade e Parcerias. Todos os direitos reservados.</p>
+            <p>Vinculado ao [Nome da sua Universidade/Instituição]</p>
+            <p class="desenvolvido-por">Desenvolvido com <span style="color: #e25555;">&hearts;</span> pelo GT-09.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

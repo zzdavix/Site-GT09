@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GT-09: Interoperabilidade e Parcerias Colaborativas no SUS Digital</title>
+    <link rel="icon" href="https://img.icons8.com/ios-filled/50/000000/medical-doctor.png" type="image/png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <header class="hero">
+        <div class="container">
+            <h1>GT-09: Interoperabilidade e Parcerias Colaborativas no SUS Digital</h1>
+            <p class="slogan">Conectando sistemas e pessoas para fortalecer o Sistema Único de Saúde.</p>
+            <a href="{{ url_for('sobre') }}" class="btn-principal">Saiba Mais Sobre Nós</a>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="{{ url_for('index') }}" class="ativo">Página Inicial</a></li>
+                <li><a href="{{ url_for('sobre') }}">Sobre o GT-09</a></li>
+                <li><a href="{{ url_for('membros') }}">Membros</a></li>
+                <li><a href="{{ url_for('atuacao') }}">Linhas de Atuação</a></li>
+                <li><a href="{{ url_for('publicacoes') }}">Publicações</a></li>
+                <li><a href="{{ url_for('noticias') }}">Notícias</a></li>
+                <li><a href="{{ url_for('contato') }}">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        
+        <section class="boas-vindas card">
+            <h2>Bem-vindos ao portal do GT-09</h2>
+            <p>
+                Somos um grupo de trabalho focado em pesquisar, debater e propor soluções para os desafios da interoperabilidade e da colaboração no ecossistema do SUS Digital. 
+                Nosso objetivo é contribuir para um sistema de saúde mais integrado, eficiente e centrado no cidadão, onde os dados fluem de forma segura e inteligente entre diferentes sistemas e instituições.
+            </p>
+            <p>
+                Navegue pelo nosso site para conhecer nossa equipe, nossas linhas de pesquisa e nossas publicações.
+            </p>
+        </section>
+
+        <section class="destaques">
+            <h2>Nossas Áreas de Foco</h2>
+            <div class="cards-foco">
+                <div class="card-foco">
+                    <h3>Interoperabilidade de Dados</h3>
+                    <p>Estudamos padrões e tecnologias para a troca eficiente e segura de informações no SUS.</p>
+                    <a href="{{ url_for('atuacao') }}#interoperabilidade" class="saiba-mais">Ver Detalhes &raquo;</a>
+                </div>
+                <div class="card-foco">
+                    <h3>Parcerias Estratégicas</h3>
+                    <p>Exploramos modelos de colaboração entre setores público, privado e acadêmico para inovação.</p>
+                    <a href="{{ url_for('atuacao') }}#parcerias" class="saiba-mais">Ver Detalhes &raquo;</a>
+                </div>
+                <div class="card-foco">
+                    <h3>SUS Digital e Inovação</h3>
+                    <p>Analisamos tendências e propomos soluções inovadoras para a transformação digital da saúde pública.</p>
+                    <a href="{{ url_for('atuacao') }}" class="saiba-mais">Ver Detalhes &raquo;</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="chamada-publicacoes card">
+            <h2>Últimas Publicações</h2>
+            <p>Acompanhe nossos artigos, relatórios e materiais desenvolvidos para a comunidade científica e gestores.</p>
+            <a href="{{ url_for('publicacoes') }}" class="btn-secundario">Ver Todas as Publicações</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 GT-09 Interoperabilidade e Parcerias. Todos os direitos reservados.</p>
+            <p>Vinculado à UFPB</p>
+            <p class="desenvolvido-por">Desenvolvido com <span style="color: #e25555;">&hearts;</span> pelo GT-09.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
