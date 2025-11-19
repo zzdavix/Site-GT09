@@ -391,6 +391,7 @@ nav ul.nav-menu {
     nav ul.nav-menu {
         justify-content: center;
         width: 100%;
+        gap: 1rem;
     }
 }
 
